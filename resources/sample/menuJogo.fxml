@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.3996655518394649" maxHeight="-Infinity" maxWidth="-Infinity"
+           minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+           styleClass="root" stylesheets="/css/base.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.control.MenuJogo">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label layoutX="77.0" layoutY="7.0" prefHeight="41.0" prefWidth="84.0" text="Ranking">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="ltvRanking" layoutX="11.0" layoutY="60.0" prefHeight="329.0" prefWidth="214.0" />
+                <Label layoutX="36.0" layoutY="39.0" text="Nome               Pontos">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <Label layoutX="94.0" layoutY="284.0" prefHeight="41.0" prefWidth="184.0" text="Ultima vez jogada">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <Separator layoutY="269.0" prefHeight="15.0" prefWidth="371.0">
+                    <opaqueInsets>
+                        <Insets top="30.0" />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="N_RESIZE" />
+                    </cursor>
+                </Separator>
+                <Button layoutX="74.0" layoutY="46.0" mnemonicParsing="false" onAction="#acaoJogar" prefHeight="60.0" prefWidth="207.0" text="Jogar">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Button>
+                <Button layoutX="74.0" layoutY="188.0" mnemonicParsing="false" onAction="#acaoDeslogar" prefHeight="60.0" prefWidth="207.0" text="Deslogar">
+                    <font>
+                        <Font name="System Bold" size="21.0" />
+                    </font>
+                </Button>
+
+                <ComboBox styleClass="font" stylesheets="/css/base.css" fx:id="cbDificuldade" layoutX="74.0" layoutY="117.0" prefHeight="60.0" prefWidth="207.0">
+
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Fácil" />
+                            <String fx:value="Médio" />
+                            <String fx:value="Dificíl" />
+
+                        </FXCollections>
+                    </items>
+
+                    <value>
+                        <String fx:value="Dificuldade" />
+                    </value>
+                </ComboBox>
+                <Label fx:id="lbUltimaJogada" layoutX="103.0" layoutY="325.0" prefHeight="60.0" prefWidth="207.0" textAlignment="CENTER">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+
+
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
