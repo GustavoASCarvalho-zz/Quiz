@@ -1,5 +1,5 @@
 # Quiz
-Quiz feito na linguagem java produzido e desenvolvido por Daniel Batista Morais e ultravikings
+Quiz feito na linguagem java produzido e desenvolvido por DanielBatistaMorais e ultravikings-github
 
 ## Como Usar ?
 Execute o arquivo "Principal.java" e bom jogo
