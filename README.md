@@ -6,7 +6,7 @@ Execute o arquivo "Principal.java" e bom jogo
 
 ## Adicionar Perguntas
 Adicione perguntas no arquivo "perguntas.txt" seguindo o padrão
-```bash
+```
 1- <enunciado>
 2- <alternativa 1>
 3- <alternativa 2>
